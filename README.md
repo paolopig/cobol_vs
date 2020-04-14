@@ -1,5 +1,5 @@
 
-  # COBOL - 
+  # COBOL - Application Contrats d'épargne
 
 ![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)
 
@@ -26,5 +26,6 @@ durée de l’épargne et du type de produit.
 
 ## License
 
-Vous pouvez télécharger le projet, modifier le code et l'utiliser où vous le souhaitez, sans le republier sur votre blog. 
+Vous pouvez télécharger le projet, modifier le code et l'utiliser où vous le souhaitez, sans le republier sur votre blog.
+
 Bon codage :) Merci.
