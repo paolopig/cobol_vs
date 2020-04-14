@@ -1,7 +1,7 @@
 
   # COBOL 
 
-[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)]
+![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)
 
 Application de simulation, visualisation de contrats d’épargne VisualStudio & Microfocus - DUGS UHA avril 2018
 
