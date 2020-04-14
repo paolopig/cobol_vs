@@ -1,0 +1,68 @@
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{38317F80-9A35-49E9-A7EF-A5F400B0ED19}</ProjectGuid>
+    <OutputName>Contrat_Epargne_TS</OutputName>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Contrat_Epargne_TS</RootNamespace>
+    <PreserveCase>True</PreserveCase>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <SQLDirectives>SQL(DBMAN=ADO) SQL(BEHAVIOR=ANSI) SQL(TARGETDB=MSSQLSERVER) SQL(DB=PORTABLEP-PC\SQLEXPRESS)</SQLDirectives>
+    <MFDependencyPaths>.\;C:\Users\PortableP\source\repos\Contrat Epargne TS\Contrat Epargne TS</MFDependencyPaths>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <MaxError>100</MaxError>
+    <SourceFormat>Variable</SourceFormat>
+    <DefineConstants>DEBUG</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DebugSymbols>false</DebugSymbols>
+    <MaxError>100</MaxError>
+    <SourceFormat>Variable</SourceFormat>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="System" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Text" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contrat_Epargne_Main.cbl" />
+    <Compile Include="CalculAge.cbl" />
+    <Compile Include="ConnectSQL.cbl" />
+    <Compile Include="CalculValContrat.cbl" />
+    <Compile Include="RemoveSpaces.cbl" />
+    <Compile Include="StringToNumeric.cbl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Copybook-csv.cpy" />
+    <None Include="Copybook-Ecrans.cpy" />
+    <None Include="Copybook-param.cpy" />
+    <None Include="Copybook-SQL.cpy" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Micro Focus\Visual COBOL\v1.0\MicroFocus.COBOL.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
