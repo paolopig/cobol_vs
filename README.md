@@ -1,6 +1,5 @@
 
-  # Titre du projet
-_(juste en dessous des badges sympatiques à placer)_
+  # COBOL 
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)]
 
